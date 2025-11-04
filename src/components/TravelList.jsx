@@ -14,7 +14,7 @@ const updatedPlans = plans.filter( plan => plan.id !== id);
         <>
         {plans.map(plan => {
             return (
-                <div className="plan-container">
+                <div className="plan-container" key={plan.id}>
                     <img src={plan.image} alt={plan.destination} />
                     <div className="text-container">
                         <h2>{plan.destination}</h2>
